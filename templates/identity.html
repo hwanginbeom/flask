@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}  전생 탐지기 {% endblock %}
+
+{% block body%}
+
+    {% if identity=='수드라'%}
+        <h1>너는 전생에 {{identity}} 였습니다.풉ㅋ</h1>
+
+    {% else %}
+        <h1>너는 전생에 {{identity}} 였습니다.</h1>
+
+    {% endif %}
+    
+    
+
+    <hr/>{% for identity1 in identity_list %}
+        <p>{{identity1}}</p>
+         <hr/>
+        {% endfor%}
+ <hr/>
+
+{% endblock %}

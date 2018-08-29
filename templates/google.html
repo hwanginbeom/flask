@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %} 구글 {% endblock %}
+<h1 class="text-center">Google</h1>
+{% block body%}
+<form action="http://google.com/search">
+    <input type="text" name="q" />
+    <input type="submit" value="제출!"/>
+</form>
+{% endblock %}
